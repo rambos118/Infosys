@@ -1,15 +1,13 @@
 // Main.java
 public class Main {
     public static void main(String[] args) {
-        // Example usage for Intern
-        Intern intern1 = new Intern(5000, 500);
-        System.out.println("Intern 1: The total aggregate percentage secured is " + intern1.calcPercentage());
+        RoomDetails room = new RoomDetails("jane wills", "Standard", 2, 5);
+        float totalBill = room.calculateBill();
 
-        Intern intern2 = new Intern(8000, 500);
-        System.out.println("Intern 2: The total aggregate percentage secured is " + intern2.calcPercentage());
-
-        // Example usage for Trainee
-        Trainee trainee = new Trainee(6000);
-        System.out.println("Trainee: The total aggregate percentage secured is " + trainee.calcPercentage());
+        // Display details
+        System.out.println("Bill Id: " + room.getBillId());
+        System.out.println("Customer Name: " + room.getCustomerName());
+        System.out.println("No. of days of Stay: " + room.getNoOfDaysOfStay());
+        System.out.println("Total Bill: " + totalBill);
     }
 }
